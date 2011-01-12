@@ -18,5 +18,11 @@ then
 	remote=$1
 fi
 
+if test -z "$remote"
+then
+	say "Unable to deduce remote"
+	usage
+fi
+
 git push $remote HEAD:$(git current-branch)
 
