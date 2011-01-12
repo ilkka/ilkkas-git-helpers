@@ -11,7 +11,8 @@ SUBDIRECTORY_OK=
 . git-parse-remote
 require_work_tree
 
-remote=$(get_default_remote)
+branch=$(git current-branch)
+remote=$(git config --get "branch.$branch.remote")
 
 if test $# > 1
 then
