@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# git-preserve-rebase: rebase while recreating merge commits
+#
+# Copyright (C) 2011 Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>
+
+dashless=$(basename "$0" | sed -e 's/-/ /')
+USAGE=
+OPTIONS_SPEC=
+SUBDIRECTORY_OK=
+. git-sh-setup
+require_work_tree
+
+git rebase --preserve-merges $@
+
