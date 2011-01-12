@@ -1,3 +1,13 @@
+ilkkas-git-helpers (0.3-0ubuntu1) maverick; urgency=low
+
+  * Remove unnecessary parse-remote source
+  * Add preserve-rebase command
+  * Fetch-and-rebase script
+  * no-ff-merge script
+  * Forgot some post-merge crud in there it seems
+
+ -- Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>  Wed, 12 Jan 2011 22:01:57 +0200
+
 ilkkas-git-helpers (0.2-0ubuntu1) maverick; urgency=low
 
   * Makefile tweaks
