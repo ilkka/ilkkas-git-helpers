@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# git-current-branch.sh: output current branch name
+#
+# Copyright (c) 2011 Ilkka Laukkanen
+# How-to-write-subcommands crash course courtesy of git-submodule.sh
+
+dashless=$(basename "$0" | sed -e 's/-/ /')
+USAGE=
+OPTIONS_SPEC=
+SUBDIRECTORY_OK=
+. git-sh-setup
+. git-parse-remote
+require_work_tree
+
+git symbolic-ref HEAD 2>/dev/null | sed -e 's/refs\/heads\///'
+
