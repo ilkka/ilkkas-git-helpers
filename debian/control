@@ -1,0 +1,22 @@
+Source: ilkkas-git-helpers
+Section: vcs
+Priority: extra
+Maintainer: Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>
+Build-Depends:
+ debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: http://github.com/ilkka/git-helpers
+
+Package: ilkkas-git-helpers
+Architecture: all
+Depends:
+ ${misc:Depends},
+ git (>= 1:1.7.0)
+Description: My extra subcommands and other helpers for Git
+ My extra subcommands and helpers for Git.
+ .
+ Includes:
+  - git-current-branch: output current branch
+  - git-push-this: push current branch to origin
+  - git-preserve-rebase: rebase while preserving merges
+  - git-noff-merge: merge without fast-forward
