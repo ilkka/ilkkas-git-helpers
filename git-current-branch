@@ -10,7 +10,6 @@ USAGE=
 OPTIONS_SPEC=
 SUBDIRECTORY_OK=
 . git-sh-setup
-. git-parse-remote
 require_work_tree
 
 git symbolic-ref HEAD 2>/dev/null | sed -e 's/refs\/heads\///'

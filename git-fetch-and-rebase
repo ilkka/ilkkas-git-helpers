@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# git-fetch-and-rebase: fetch from origin and preserve-rebase
+#
+# Copyright (C) 2011 Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>
+
+dashless=$(basename "$0" | sed -e 's/-/ /')
+USAGE="[remote]"
+OPTIONS_SPEC=
+SUBDIRECTORY_OK=
+. git-sh-setup
+. git-parse-remote
+require_work_tree
+
+remote=$(get_default_remote)
+
+if test $# -gt 1
+then
+	remote=$1
+fi
+
+if test -z "$remote"
+then
+	say "Unable to deduce remote"
+	usage
+fi
+
+git fetch $remote && git rebase --preserve-merges $(git current-branch)
+
