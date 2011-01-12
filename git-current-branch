@@ -2,7 +2,7 @@
 #
 # git-current-branch.sh: output current branch name
 #
-# Copyright (c) 2011 Ilkka Laukkanen
+# Copyright (c) 2011 Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>
 # How-to-write-subcommands crash course courtesy of git-submodule.sh
 
 dashless=$(basename "$0" | sed -e 's/-/ /')
