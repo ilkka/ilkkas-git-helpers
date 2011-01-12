@@ -1,4 +1,5 @@
-SCRIPTS=git-current-branch
+SCRIPTS=git-current-branch \
+	git-push-this
 
 .DEFAULT: build
 build:
