@@ -5,6 +5,7 @@ SCRIPTS=git-current-branch \
 build:
 
 install:
-	$(foreach s,$(SCRIPTS),install -D -m0755 $(s) $(DESTDIR)/usr/lib/git-core/$(s))
+	mkdir -p $(DESTDIR)/usr/lib/git-core
+	install -m0755 $(SCRIPTS) $(DESTDIR)/usr/lib/git-core
 
 .PHONY: build install
