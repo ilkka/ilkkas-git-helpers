@@ -8,6 +8,7 @@ ilkkas-git-helpers (0.2-0ubuntu1) maverick; urgency=low
   * Complain if unable to deduce remote
   * Fix remote deduction
   * Fix my crappy shell scripting
+<<<<<<< HEAD
   * Readme
   * Debianizations
   * Git-buildpackage config file
