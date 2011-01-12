@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# git-push-this: push current branch to remote
+#
+# Copyright (C) 2011 Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>
+dashless=$(basename "$0" | sed -e 's/-/ /')
+USAGE="[remote]"
+OPTIONS_SPEC=
+SUBDIRECTORY_OK=
+. git-sh-setup
+. git-parse-remote
+require_work_tree
+
+remote=$(get_default_remote)
+
+if test $# > 1
+then
+	remote=$1
+fi
+
+git push $remote HEAD:$(git current-branch)
+
