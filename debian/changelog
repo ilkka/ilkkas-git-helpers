@@ -1,3 +1,20 @@
+ilkkas-git-helpers (0.2-0ubuntu1~1.gbp65e1fa) UNRELEASED; urgency=low
+
+  ** SNAPSHOT build @65e1faeae5801d8209ce73f0b4b3844ee45c3b7c **
+
+  * Makefile tweaks
+  * Add author info to git-current-branch
+  * Push-this command
+  * Add push-this script to makefile
+  * Fix makefile when installing multiple files
+  * Complain if unable to deduce remote
+  * Fix remote deduction
+  * Fix my crappy shell scripting
+  * Debianizations
+  * Git-buildpackage config file
+
+ -- Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>  Wed, 12 Jan 2011 16:45:10 +0200
+
 ilkkas-git-helpers (0.1-0ubuntu1) maverick; urgency=low
 
   * Initial release
