@@ -7,7 +7,7 @@ then
 	exit 1
 fi
 BASE=ilkkas-git-helpers
-PFX=$BASE_$VER/
-TAR=$BASE_$VER.orig.tar.gz
+PFX=${BASE}_${VER}/
+TAR=${BASE}_${VER}.orig.tar.gz
 git archive --prefix=$PFX $TAG|gzip -9 > $TAR
 pristine-tar commit $TAR $TAG
