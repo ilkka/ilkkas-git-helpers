@@ -1,3 +1,16 @@
+ilkkas-git-helpers (0.3.1-0ubuntu1) maverick; urgency=low
+
+  * Correctly install into Git exec path
+  * Rewrite README in asciidoc
+  * Set exec bit on git-noff-merge
+  * Add missing scripts to Makefile to be installed
+  * Fix botched rebase cmd in fetch-and-rebase
+  * Use pristine-tar again
+  * Helper script for pristine-tar generation
+  * Fix prefix and filename generation
+
+ -- Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>  Thu, 13 Jan 2011 13:49:47 +0200
+
 ilkkas-git-helpers (0.3-0ubuntu1) maverick; urgency=low
 
   * Remove unnecessary parse-remote source
