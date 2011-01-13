@@ -25,5 +25,5 @@ then
 	usage
 fi
 
-git fetch $remote && git rebase --preserve-merges $(git current-branch)
+git fetch $remote && git rebase --preserve-merges $remote/$(git current-branch)
 
