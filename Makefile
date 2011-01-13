@@ -1,5 +1,8 @@
 SCRIPTS=git-current-branch \
-	git-push-this
+	git-push-this \
+	git-noff-merge \
+	git-fetch-and-rebase \
+	git-preserve-rebase
 GIT_EXEC_PATH=$(shell git --exec-path)
 .DEFAULT: build
 build:
