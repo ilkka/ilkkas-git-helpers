@@ -1,0 +1,40 @@
+Git helpers
+===========
+
+This is my collection of Git helpers, originally inspired by
+https://gist.github.com/590895.
+
+The Commands
+------------
+
+current-branch
+~~~~~~~~~~~~~~
+
+Output the current branch name (used by the other commands).
+
+push-this
+~~~~~~~~~
+
+Push the current branch either to the default remote (gotten using
+git_default_remote()) or to the remote given on the command line.
+
+fetch-and-rebase
+~~~~~~~~~~~~~~~~
+
+Fetch from default remote or given remote, then rebase current branch on top of
+the remote branch with --preserve-merges flag.
+
+preserve-rebase
+~~~~~~~~~~~~~~~
+
+Rebase that uses --preserve-merges by default, i.e. doesn't clobber merge
+commits.
+
+noff-merge
+~~~~~~~~~~
+
+Merge that uses --no-ff by default, i.e. always creates a merge commit.
+
+//////////////////////////////////////////////////////////////////////////////
+vim: filetype=asciidoc sw=2 sts=2 tw=78
+//////////////////////////////////////////////////////////////////////////////
