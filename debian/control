@@ -3,7 +3,8 @@ Section: vcs
 Priority: extra
 Maintainer: Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>
 Build-Depends:
- debhelper (>= 7.0.50~)
+ debhelper (>= 7.0.50~),
+ git (>= 1:1.7.0)
 Standards-Version: 3.8.4
 Homepage: http://github.com/ilkka/git-helpers
 
