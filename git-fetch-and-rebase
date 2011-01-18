@@ -11,6 +11,7 @@ SUBDIRECTORY_OK=
 . git-sh-setup
 . git-parse-remote
 require_work_tree
+cd_to_toplevel
 
 remote=$(get_default_remote)
 
