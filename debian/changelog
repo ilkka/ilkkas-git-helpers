@@ -1,3 +1,10 @@
+ilkkas-git-helpers (0.3.2-0build1) maverick; urgency=low
+
+  * cd to toplevel in push-this and fetch-and-rebase
+  * change release versioning scheme to drop the "ubuntu" for now
+
+ -- Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>  Tue, 18 Jan 2011 09:41:49 +0200
+
 ilkkas-git-helpers (0.3.1-0ubuntu2) maverick; urgency=low
 
   * Add git to build-deps because it's used in Makefile
