@@ -1,3 +1,9 @@
+ilkkas-git-helpers (0.3.3-0build1) maverick; urgency=low
+
+  * Fetch all tags in fetch-and-rebase
+
+ -- Ilkka Laukkanen <ilkka.s.laukkanen@gmail.com>  Wed, 26 Jan 2011 11:01:31 +0200
+
 ilkkas-git-helpers (0.3.2-0build1) maverick; urgency=low
 
   * cd to toplevel in push-this and fetch-and-rebase
